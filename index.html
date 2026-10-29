@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AETHER AI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fas fa-bolt"></i>
+                    <span>AETHER AI</span>
+                </div>
+                <button class="new-chat-btn" id="newChatBtn">
+                    <i class="fas fa-plus"></i> Nouvelle conversation
+                </button>
+            </div>
+            <div class="sidebar-footer">
+                <p>AETHER AI • 2026</p>
+            </div>
+        </aside>
+
+        <!-- Main Chat -->
+        <main class="chat-container">
+            <header class="chat-header">
+                <h1>AETHER AI</h1>
+                <p class="subtitle">Votre assistant intelligent</p>
+            </header>
+
+            <div class="messages" id="messages">
+                <!-- Messages will appear here -->
+            </div>
+
+            <div class="input-area">
+                <div class="input-box">
+                    <textarea 
+                        id="userInput" 
+                        placeholder="Écrivez votre message..." 
+                        rows="1"
+                    ></textarea>
+                    <button id="sendBtn">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <p class="disclaimer">AETHER AI peut faire des erreurs. Vérifiez les informations importantes.</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
